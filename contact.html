@@ -74,23 +74,5 @@
     </main>
     
     <script src="script.js"></script>
-    <script>
-        // Gestion du formulaire
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Animation du bouton
-            const btn = this.querySelector('.submit-btn');
-            btn.innerHTML = '<i class="fas fa-check"></i> Message envoyé !';
-            btn.style.backgroundColor = '#4CAF50';
-            
-            // Réinitialiser après 3 secondes
-            setTimeout(() => {
-                this.reset();
-                btn.innerHTML = '<i class="fas fa-paper-plane"></i> Envoyer le message';
-                btn.style.backgroundColor = '';
-            }, 3000);
-        });
-    </script>
 </body>
 </html>
